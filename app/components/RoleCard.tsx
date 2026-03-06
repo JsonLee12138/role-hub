@@ -33,7 +33,7 @@ export function RoleCard({ role }: RoleCardProps) {
 
       <div className="flex items-center justify-between w-full pt-3 border-t border-border">
         <span className="text-xs text-text-sub font-ui">v1.0.2</span>
-        <CopyButton text={`agent-team role install ${role.role_name}`} />
+        <CopyButton text={`agent-team role-repo add ${role.source_owner}/${role.source_repo} --role ${role.role_name}`} />
       </div>
     </Link>
   )
